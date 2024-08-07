@@ -17,9 +17,9 @@ def configAI():
     if chat_text is None:
         return jsonify({"error": "Missing 'chat' key in JSON data"}), 400
     # question = chat_text['chatInput']
-    print('Received chat message:', chat_text)
+    # print('Received chat message:', chat_text)
     output = [chat_text]
-    print(output, 'output')
+    # print(output, 'output')
 
     return jsonify(output)
 
@@ -28,7 +28,7 @@ def key_phrase():
     session_id = generate_random_id()
     data = request.get_json()
     chat_input = data["chat"]["output"]
-    print(chat_input,'chat_input')
+    # print(chat_input,'chat_input')
 
     question = get_human_chat()
     rake.extract_keywords_from_text(chat_input) 

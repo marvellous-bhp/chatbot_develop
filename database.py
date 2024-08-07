@@ -36,7 +36,7 @@ def get_human_chat():
         value = "Unsupported key type"
 
     human_chat = value[1]
-    print("human_chat",human_chat)
+    # print("human_chat",human_chat)
     human_chat_obj = json.loads(human_chat)
 
     human_chat_content = human_chat_obj['data']['content']
