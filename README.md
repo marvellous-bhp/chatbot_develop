@@ -3,3 +3,4 @@
 
 pip install rake_nltk
 
+run: python app.py
